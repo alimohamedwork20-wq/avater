@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,400&display=swap');
+
+* {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(4, 4, 56) 10%, black);
+    background-image: linear-gradient(to right, rgb(4, 4, 56) 10%, black);
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contener {
+    min-height: 100vh;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 17px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 10px;
+    margin-top: 5px;
+    cursor: context-menu;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 14px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li:hover {
+    text-decoration: underline white;
+    font-size: larger;
+}
+
+.logo:hover {
+    text-shadow: 2px 1px 2px rgb(9, 9, 221);
+}
+
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    max-width: 90%;
+    min-height: 300px;
+}
+
+.about {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    align-self: center;
+    margin-left: 80px;
+    margin-top: 20px;
+    color: whitesmoke;
+    font-size: xx-large;
+
+}
+
+p {
+    width: 90%;
+    color: white;
+    align-self: center;
+    margin-top: 50px;
+    letter-spacing: 2.5px;
+    word-spacing: 2px;
+    line-height: 40px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    ul {
+        gap: 15px;
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .about {
+        margin-right: 30px;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 5PX;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.f {
+    width: 40px;
+    height: 44PX;
+}
+
+.t {
+    width: 45px;
+}
+
+.d {
+    width: 45px;
+    height: 45PX;
+}
+
+#button {
+    padding: 10px;
+    width: 130px;
+    background-image: linear-gradient(to right, rgb(4, 4, 56) 10%, rgb(12, 27, 81));
+    border-radius: 5px;
+    justify-self: center;
+    font-size: large;
+    margin-bottom: 3px;
+    border: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+#button:hover{
+    background: transparent;
+    border: 1px solid white;
+}

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,400&display=swap');
+
+* {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(4, 4, 56) 10%, black);
+    min-height: 100vh;
+    margin: 0;
+}
+
+.contener {
+    min-height: 100vh;
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 17px;
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 10px;
+    margin-top: 5px;
+    cursor: context-menu;
+}
+
+.logo:hover {
+    text-shadow: 2px 1px 2px rgb(9, 9, 221);
+}
+
+header ul li:hover {
+    text-decoration: underline white;
+    font-size: larger;
+}
+h2{
+    color: white;
+    padding-bottom: 10px;
+    font-weight: 500;
+    text-shadow: 2px 1.5px 4px white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: context-menu;
+}
+.content {
+    background-image: linear-gradient(to right, rgb(16, 16, 118) 10%, rgb(6, 6, 23));
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 12px;
+    margin: 40px auto;
+    margin: 100px auto;
+    box-shadow: 1px 1px 10px 5px rgba(14, 7, 90, 0.688);
+}
+
+form {  
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+
+}
+
+input {
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(4, 4, 56) 10%, black);
+    padding: 15px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    outline: none;
+    border-radius: 3px;
+}
+
+#submit {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-style: normal;
+}
+/* كلامclick */
+.about-avatar {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    color: white;
+}
+
+.about-avatar h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px #00bfff;
+}
+
+.animated-text {
+    line-height: 1.8;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.animated-text span {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: wordFade 0.6s forwards;
+}
+
+/* أنيميشن كلمة كلمة */
+.animated-text span:nth-child(1) { animation-delay: 0.1s; }
+.animated-text span:nth-child(2) { animation-delay: 0.2s; }
+.animated-text span:nth-child(3) { animation-delay: 0.3s; }
+.animated-text span:nth-child(4) { animation-delay: 0.4s; }
+.animated-text span:nth-child(5) { animation-delay: 0.5s; }
+.animated-text span:nth-child(6) { animation-delay: 0.6s; }
+.animated-text span:nth-child(7) { animation-delay: 0.7s; }
+.animated-text span:nth-child(8) { animation-delay: 0.8s; }
+.animated-text span:nth-child(9) { animation-delay: 0.9s; }
+.animated-text span:nth-child(10){ animation-delay: 1s; }
+/* تقدر تكمل بنفس النمط */
+
+@keyframes wordFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    ul {
+        gap: 15px;
+        font-size: 15px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .content {
+        margin-top: 120px;
+       
+    }
+}
+#submit:hover{
+    box-shadow: 1px 1px 10px 3px rgb(4, 4, 101);
+}
